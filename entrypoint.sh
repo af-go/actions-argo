@@ -76,7 +76,7 @@ else
 fi
 
 # Execute the command
-ARGO_CMD="argo submit $INPUT_WORKFLOW_YAML_PATH --name $WORKFLOW_NAME $PARAM_FILE_CMD"
+ARGO_CMD="argo submit $INPUT_WORKFLOW_YAML_PATH --namespace infra-platform-pipeline  --name $WORKFLOW_NAME $PARAM_FILE_CMD"
 echo "executing command: $ARGO_CMD"
 eval $ARGO_CMD
 
